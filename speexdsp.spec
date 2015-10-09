@@ -7,11 +7,12 @@
 Summary:	Preprocessing, echo cancellation and jitter buffer helpers for Speex
 Name:		speexdsp
 Version:	1.2
-Release:	0.%{beta}.1
+Release:	0.%{beta}.2
 License:	BSD
 Group:		Sound
 URL:		http://www.speex.org/
 Source0:	http://downloads.us.xiph.org/releases/speex/%{name}-%{version}%{beta}.tar.gz
+Patch0:		speexdsp-1.2rc3-fix-pkg-config-file.patch
 
 %description
 Preprocessing, echo cancellation and jitter buffer helpers for Speex
@@ -41,6 +42,7 @@ Speex development files.
 
 %prep
 %setup -qn %{name}-%{version}%{beta}
+%apply_patches
 
 %build
 autoreconf -fi
