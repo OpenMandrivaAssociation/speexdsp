@@ -19,7 +19,6 @@ Group:		Sound
 URL:		http://www.speex.org/
 Source0:	http://downloads.us.xiph.org/releases/speex/%{name}-%{version}.tar.gz
 Patch0:		speexdsp-1.2rc3-fix-pkg-config-file.patch
-Patch1:		speexdsp-1.2-rc3-aarch64.patch
 
 %description
 Preprocessing, echo cancellation and jitter buffer helpers for Speex
