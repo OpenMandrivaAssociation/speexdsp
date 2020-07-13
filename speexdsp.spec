@@ -3,8 +3,6 @@
 %bcond_without compat32
 %endif
 
-%define beta rc3
-
 %define major 1
 %define libname %mklibname %{name} %{major}
 %define develname %mklibname -d %{name}
@@ -14,12 +12,12 @@
 
 Summary:	Preprocessing, echo cancellation and jitter buffer helpers for Speex
 Name:		speexdsp
-Version:	1.2
-Release:	0.%{beta}.6
+Version:	1.2.0
+Release:	1
 License:	BSD
 Group:		Sound
 URL:		http://www.speex.org/
-Source0:	http://downloads.us.xiph.org/releases/speex/%{name}-%{version}%{beta}.tar.gz
+Source0:	http://downloads.us.xiph.org/releases/speex/%{name}-%{version}.tar.gz
 Patch0:		speexdsp-1.2rc3-fix-pkg-config-file.patch
 Patch1:		speexdsp-1.2-rc3-aarch64.patch
 
@@ -69,7 +67,7 @@ Speex development files.
 %endif
 
 %prep
-%autosetup -n %{name}-%{version}%{beta} -p1
+%autosetup -p1
 autoreconf -fi
 
 export CONFIGURE_TOP="$(pwd)"
