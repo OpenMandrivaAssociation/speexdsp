@@ -12,7 +12,7 @@
 
 Summary:	Preprocessing, echo cancellation and jitter buffer helpers for Speex
 Name:		speexdsp
-Version:	1.2.0
+Version:	1.2.1
 Release:	1
 License:	BSD
 Group:		Sound
@@ -50,6 +50,8 @@ Speex development files.
 %package -n %{lib32name}
 Summary:	Shared library of the Speex codec (32-bit)
 Group:		System/Libraries
+BuildRequires:	libc6
+Requires:	libc6
 
 %description -n %{lib32name}
 This package contains the shared library required for running
