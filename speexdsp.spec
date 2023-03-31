@@ -13,7 +13,7 @@
 Summary:	Preprocessing, echo cancellation and jitter buffer helpers for Speex
 Name:		speexdsp
 Version:	1.2.1
-Release:	1
+Release:	2
 License:	BSD
 Group:		Sound
 URL:		http://www.speex.org/
