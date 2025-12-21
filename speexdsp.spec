@@ -50,6 +50,11 @@ Speex development files.
 %package -n %{lib32name}
 Summary:	Shared library of the Speex codec (32-bit)
 Group:		System/Libraries
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	libc6
 Requires:	libc6
 
